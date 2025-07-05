@@ -7,7 +7,22 @@ import ReactDOM from 'react-dom/client';
 //         root.render(h2)
 
         const h1 = <h1> Hey naste react </h1>;
-        const root = ReactDOM.createRoot(document.getElementById('root'));
-        root.render(h1);
+       
+        
 
+        const FirstComponent = () => {
+                return <h1>Hey first  react componenet</h1>
+        }
 
+        const SecondComponenet = () => {
+                return (
+                        <div>
+                                <h1>Hey second react component</h1>
+                                <FirstComponent />
+                                {h1}
+                        </div>
+                )
+
+        }
+         const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<SecondComponenet />);
