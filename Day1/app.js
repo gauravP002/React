@@ -4,7 +4,4 @@
         root.render(h2)
 
 
-        // const h1 = document.createElement('h1')
-        // h1.innerHTML='hey this is my code';
-        // const getId = document.getElementById('root');
-        // getId.appendChild(h1);
+      
